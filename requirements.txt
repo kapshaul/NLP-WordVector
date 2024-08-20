@@ -4,3 +4,4 @@ datasets
 matplotlib
 scikit-learn
 nltk
+gensim
