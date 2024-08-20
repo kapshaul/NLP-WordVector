@@ -1,0 +1,6 @@
+numpy
+tqdm
+datasets
+matplotlib
+scikit-learn
+nltk
