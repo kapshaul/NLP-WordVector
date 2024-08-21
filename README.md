@@ -1,5 +1,15 @@
 # Word Vector in Natural Language Processing
 
+## Installation
+
+To get started, clone the repository and install the required dependencies:
+
+```bash
+git clone https://github.com/kapshaul/NLP-WordVector.git
+cd NLP-WordVector
+pip install -r requirements.txt
+```
+
 ## Overview
 
 This project delves into the foundational aspects of natural language processing, focusing on the creation and analysis of word vectors, distributed representations of words, and the exploration of inherent biases in these representations. The AG News Benchmark dataset is used for implementing tokenization, vocabulary building, and investigating various techniques for generating and analyzing word vectors.
@@ -113,13 +123,3 @@ The following examples illustrate how word2vec reinforces gender stereotypes in 
 ```
 
 These results show that word2vec tends to associate female doctors with roles in nursing or specializations focused on women’s or children’s health, thus reinforcing gender stereotypes in the medical field.
-
-## Installation
-
-To get started, clone the repository and install the required dependencies:
-
-```bash
-git clone https://github.com/kapshaul/NLP-WordVector.git
-cd NLP-WordVector
-pip install -r requirements.txt
-```
