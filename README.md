@@ -29,6 +29,8 @@ To implement this, run `build_freq_vectors.py`.
 
 </div>
 
+<br>
+
 Figure 1 shows the effect of applying a cutoff heuristic where tokens with a frequency of 12 or higher are retained, capturing 96\% of the tokens in the dataset. This threshold was chosen for computational feasibility, as it allows the co-occurrence matrix $C$ to remain approximately 1GB in size. Expanding the vocabulary beyond this point would significantly increase memory requirements, potentially exceeding available resources. The figure illustrates how this cutoff effectively balances the coverage of the dataset with the constraints of computational capacity.
 
 ### 2. Frequency-Based Word Vectors
@@ -43,7 +45,6 @@ To implement this, run `build_glove_vectors.py`.
 **Figure 2**: t-SNE Visualization
 
 <br>
-<br>
 
 <img src="https://github.com/kapshaul/NLP-WordVector/blob/master/Figures/Figure_3.png" alt="t-SNE Visualization" width="300">
 <img src="https://github.com/kapshaul/NLP-WordVector/blob/master/Figures/Figure_4.png" alt="t-SNE Visualization" width="300">
@@ -52,6 +53,8 @@ To implement this, run `build_glove_vectors.py`.
 **Figure 3**: t-SNE clusters — War (left), Technology (middle), and Politics (right)
 
 </div>
+
+<br>
 
 ### 3. Learning-Based Word Vectors with GloVe
 
@@ -91,7 +94,7 @@ $\hspace{0.75cm}=2f(C_{ij})(w_i^T\tilde{w}_ j + b_i + \tilde{b}_ j - \log C_{ij}
 
 Training GloVe vectors involved monitoring the loss function throughout the process. The behavior of the loss during training is detailed below,
 
-```
+```python
 2024-04-17 04:09:49 INFO     Iter 14400 / 15227: avg. loss over last 100 batches = 0.046686563985831216
 2024-04-17 04:09:49 INFO     Iter 14500 / 15227: avg. loss over last 100 batches = 0.04769956457112328
 2024-04-17 04:09:49 INFO     Iter 14600 / 15227: avg. loss over last 100 batches = 0.04687950216720886
@@ -112,7 +115,7 @@ To implement this, run `Exploring_learned_biases.py`.
 
 The following examples illustrate how word2vec reinforces gender stereotypes in medicine,
 
-```
+```python
 >>> analogy('man', 'doctor', 'woman')
     man : doctor :: woman : ?
     [('gynecologist', 0.709), ('nurse', 0.648), ('doctors', 0.647), ('physician', 0.644), ('pediatrician', 0.625), ('nurse_practitioner', 0.622), ('obstetrician', 0.607), ('ob_gyn', 0.599), ('midwife', 0.593), ('dermatologist', 0.574)]
