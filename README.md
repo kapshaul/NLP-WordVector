@@ -23,7 +23,7 @@ To implement this, run `build_freq_vectors.py`.
 
 <div align="center">
 
-<img src="https://github.com/kapshaul/NLP-WordVector/blob/master/Figures/Figure_1.png" alt="Cumulative Regret of UCB" width="700">
+<img src="https://github.com/kapshaul/NLP-WordVector/blob/master/Figures/Figure_1.png" alt="Cumulative Regret of UCB" width="600">
 
 **Figure 1**: Token frequency distribution (top) and cumulative fraction covered (bottom)
 
