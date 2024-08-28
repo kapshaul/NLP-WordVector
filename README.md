@@ -35,7 +35,7 @@ Figure 1 shows the effect of applying a cutoff heuristic where tokens with a fre
 
 ### 2. Frequency-Based Word Vectors
 
-Frequency-based word vectors are explored using Pointwise Mutual Information (PPMI). This involves constructing a co-occurrence matrix from the corpus, computing PPMI values, and then reducing the dimensionality of the word vectors through techniques like Truncated SVD. Visualization of these word vectors is performed using t-SNE to better understand the captured semantic relationships.
+Frequency-based word vectors are explored using *Pointwise Mutual Information (PPMI)*. This involves constructing a co-occurrence matrix from the corpus, computing PPMI values, and then reducing the dimensionality of the word vectors through techniques like Truncated SVD. Visualization of these word vectors is performed using *t-SNE* to better understand the captured semantic relationships.
 To implement this, run `build_glove_vectors.py`.
 
 <div align="center">
