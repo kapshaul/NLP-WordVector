@@ -74,7 +74,7 @@ $$
 
 The derivation of the gradient for the objective $J$ is expressed as follows,
 
-$\nabla_{w_i}J=\nabla_{w_i}\sum_{i,j  \in V}f(C_{ij})(w_i^T\tilde{w}_ j + b_i + \tilde{b}_ j - \log C_{ij})^2   ...  \text{(using chain rule)}$
+$\nabla_{w_i}J=\nabla_{w_i}\sum_{i,j  \in V}f(C_{ij})(w_i^T\tilde{w}_ j + b_i + \tilde{b}_ j - \log C_{ij})^2$
 
 $\hspace{0.75cm}=2{\tilde{w}_ j}f(C_{ij})(w_i^T\tilde{w}_ j + b_i + \tilde{b}_ j - \log C_{ij})$
 
