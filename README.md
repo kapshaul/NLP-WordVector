@@ -10,6 +10,12 @@ cd NLP-WordVector
 pip install -r requirements.txt
 ```
 
+## Implementation
+
+1. To implement *Tokenization and Vocabulary Building*, run `build_freq_vectors.py`.
+2. To implement *Frequency-Based Word Vectors* and *Learning-Based Word Vectors with GloVe*, run `build_glove_vectors.py`.
+3. To implement *Exploring Bias in Word Vectors*, run `Exploring_learned_biases.py`.
+
 ## Overview
 
 This project delves into the foundational aspects of natural language processing, focusing on the creation and analysis of word vectors, distributed representations of words, and the exploration of inherent biases in these representations. The AG News Benchmark dataset is used for implementing tokenization, vocabulary building, and investigating various techniques for generating and analyzing word vectors.
@@ -19,7 +25,6 @@ This project delves into the foundational aspects of natural language processing
 ### 1. Tokenization and Vocabulary Building
 
 The project begins by transforming raw text into tokenized forms, with experimentation on different tokenization methods, including lemmatization. A vocabulary is then built based on the frequency of tokens, using heuristics to optimize the vocabulary size for computational efficiency.
-To implement this, run `build_freq_vectors.py`.
 
 <div align="center">
 
@@ -36,7 +41,6 @@ Figure 1 shows the effect of applying a cutoff heuristic where tokens with a fre
 ### 2. Frequency-Based Word Vectors
 
 Frequency-based word vectors are explored using *Pointwise Mutual Information (PPMI)*. This involves constructing a co-occurrence matrix from the corpus, computing PPMI values, and then reducing the dimensionality of the word vectors through techniques like Truncated SVD. Visualization of these word vectors is performed using *t-SNE* to better understand the captured semantic relationships.
-To implement this, run `build_glove_vectors.py`.
 
 <div align="center">
 
@@ -106,12 +110,9 @@ Training GloVe vectors involved monitoring the loss function throughout the proc
 2024-04-17 04:09:49 INFO     Iter 15200 / 15227: avg. loss over last 100 batches = 0.04732485846561704
 ```
 
-To implement this, run `build_glove_vectors.py`.
-
 ### 4. Exploring Bias in Word Vectors
 
 A significant focus of this project is the exploration of biases that can be inherent in word vectors. Relationships learned by word2vec are analyzed, revealing how these vectors can reinforce gender, racial, or other societal biases. This highlights the importance of understanding and addressing these biases, particularly in the deployment of NLP models in real-world applications.
-To implement this, run `Exploring_learned_biases.py`.
 
 The following examples illustrate how word2vec reinforces gender stereotypes in medicine,
 
